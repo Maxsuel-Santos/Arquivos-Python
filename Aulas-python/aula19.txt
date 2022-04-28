@@ -1,0 +1,87 @@
+filme = {
+    'titulo': 'Star Wars', 'ano': 1977, 'diretor': 'George Lucas'
+}
+for k, v in filme.items():
+    print(f'O {k} é {v}')
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+# Dicionários detro de listas:
+locadora = [[{'titulo': 'Star Wars', 'ano': 1977, 'diretor': 'George Lucas'}],
+            [{'titulo': 'Avengers', 'ano': 2012, 'diretor': 'Joss Whedon'}],
+            [{'titulo': 'Matrix', 'ano': 1999, 'diretor': 'Wachowski'}]]
+print(locadora[0])
+print(locadora[1])
+print([locadora[2]])
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+pessoas = {'nome': 'Maxsuel', 'Sobrenome': 'Santos', 'idade': 15, 'sexo': 'Masculino'}
+print(f'{pessoas["nome"]} tem {pessoas["idade"]} anos, cujo sexo é {pessoas["sexo"]}')
+print(pessoas.values())
+print(pessoas.keys())
+print(pessoas.items())
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+for k in pessoas.keys():
+    print(k)
+print('\033[1;4;35m-------------------------------------------\033[m')
+for i in pessoas.items():
+    print(i)
+print('\033[1;4;35m-------------------------------------------\033[m')
+for v in pessoas.values():
+    print(v)
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+for k, v in pessoas.items():
+    print(f'{k} = {v}')
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+del pessoas['sexo']         # Apagar um elemento pelo seu índice
+del pessoas['Sobrenome']    # Apagar um elemento pelo seu índice
+for k, v in pessoas.items():
+    print(f'{k} = {v}')
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+pessoas['nome'] = 'Gustavo' # Substituição
+for k, v in pessoas.items():
+    print(f'{k} = {v}')
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+pessoas['peso'] = 45     # Adicionou um item
+for k, v in pessoas.items():
+    print(f'{k} = {v}')
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+
+brasil = []
+estado1 = {'uf': 'Bahia', 'sigla': 'BA'}
+estado2 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
+brasil.append(estado1)
+brasil.append(estado2)
+print(brasil)
+print(estado1)
+print(estado2)
+print(brasil[0])
+print(brasil[1])
+print(brasil[0]['uf'])
+print(brasil[1]['sigla'])
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')
+estado = dict()
+brasil = list()
+for c in range(3):
+    estado['uf'] = str(input('Unidade Federativa: ')).strip().title()
+    estado['sigla'] = str(input('Sigla do estado: ')).strip().upper()
+    brasil.append(estado.copy())
+    print('------------------------------')
+for e in brasil:
+    for k, v in e.items():
+        print(f'O campo {k} tem valor {v}')
+
+print('\033[1;4;35m-------------------------------------------------------------------------\033[m')

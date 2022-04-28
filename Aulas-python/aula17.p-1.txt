@@ -1,0 +1,58 @@
+valores = list()
+for cont in range(0, 5):
+    valores.append(int(input('Digite um valor: ')))
+print('\033[1;31m----------------------------------\033[m')
+for c, v in enumerate(valores):
+    print(f'Na posição {c} achei o valor {v}')
+print('Cheguei ao final!!!')
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')
+
+valores = [1, 2, 3, 4, 5, 7]
+print(valores)
+if 7 in valores:
+    valores.remove(7)
+print(f'New list {valores}')
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')
+
+lista = [0, 1, 2, 7, 9]
+lista.insert(2, 7)
+print(f'New list {lista}')
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')
+
+listagem = [0, 1]
+listagem.append(9)
+print(listagem)
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')
+
+valor = list(range(4, 12))
+del valor[0]
+print(valor)
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')
+
+valores = [0, 6, 5, 94, 25, 651, 84, 9, 7, 81, 5236, 56, 59, 85, 21, 54, 65, 23, 91, 62, 8.6, 956.32, 67, 958]
+print(f'Lista ordenada de forma crescente {sorted(valores)}')
+valores.sort(reverse=True)
+print(f'Lista ordenada de forma decrescente {valores}')
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')
+
+a = [1, 2, 3, 4, 5]
+b = a
+b[2] = 7
+print(f'List A: {a}')
+print(f'List B: {b}')
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')
+
+a = [1, 2, 3, 4, 5]
+b = a[:]
+b[2] = 7
+print(f'List A: {a}')
+print(f'List B: {b}')
+
+print('\033[1;30m-----------------------------------------------------------------------------\033[m')

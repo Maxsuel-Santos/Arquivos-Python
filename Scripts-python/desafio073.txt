@@ -1,0 +1,6 @@
+print('=== VERIFICANDO AS PRIMEIRAS LETRAS DE UM TEXTO ===')
+print('---------------------------------------------------')
+city = str(input('Qual o nome da cidade? ')).strip()
+print('---------------------------------------------------')
+print(city[:5].upper() == 'SANTO')
+print('---------------------------------------------------')

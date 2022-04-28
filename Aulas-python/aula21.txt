@@ -1,0 +1,104 @@
+def contador(i, f, p):
+    """
+        -> Manualzito
+            i = início
+            f = fim
+            p = passo
+    """
+    c = i
+    while c <= f:
+        print(f'{c}', end=' .. ')
+        c += p
+    print('FIM!')
+
+
+contador(0, 10, 1)
+help(contador)
+
+print(f'{"-"*107}')
+
+
+def somador(a=0, b=0, c=0):
+    soma = a + b + c
+    print(f'{soma}', end='\n')
+
+
+somador(7, 8, 9)
+somador(8, 4, 5)
+somador(7, 8)
+somador(3)
+somador()
+somador(c=498416, b=9856231)
+
+print(f'{"-"*107}')
+
+print('------------------------------')
+print('|        MAXSUEL             |')
+print('|        APARECIDO           |')
+print('|        LIMA                |')
+print('|        SANTOS              |')
+print('------------------------------')
+
+print(f'{"-"*107}')
+
+
+def função():
+    global a
+    n1 = 7
+    print(f'N1 dentro vale {n1}')
+
+
+n1 = 3
+função()
+print(f'N1 fora vale {n1}')
+
+print(f'{"-"*107}')
+
+
+def somar(a=0, b=0, c=0):
+    s = a + b + c
+    return s
+
+
+r1 = somar(4, 5, 6)
+r2 = somar(6, 4)
+r3 = somar(13)
+print(f'Meus cálculos deram {r1}, {r2} e {r3}')
+print(f'{r1+r2+r3}')
+
+print(f'{"-"*107}')
+
+# EXERCÍCIO
+
+
+def fatorial(num=0):
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c
+    return f
+
+
+f1 = fatorial(5)
+f2 = fatorial(4)
+f3 = fatorial()
+print(f'Os resultados são {f1}, {f2} e {f3}')
+
+print(f'{"-"*107}')
+
+# EXERCÍCIOS
+
+
+def par(n=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+
+num = int(input('Digite um valor: '))
+if par(num):
+    print('É par!')
+else:
+    print('É ímpar!')
+
+print(f'{"-"*107}')

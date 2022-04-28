@@ -1,0 +1,13 @@
+print('=== Média do aluno ===')
+print('-------------------------------------------')
+n1 = float(input('Digite sua primeira nota: '))
+print('-------------------------------------------')
+n2 = float(input('Digite sua segunda nota: '))
+print('-------------------------------------------')
+n3 = float(input('Digite sua terceira nota: '))
+print('-------------------------------------------')
+n4 = float(input('Digite sua quarta nota: '))
+print('===========================================')
+media = (n1 + n2 + n3 + n4) / 4 #Cálculo da média
+print('Sua média foi: {:.2f}'.format(media))
+exit()

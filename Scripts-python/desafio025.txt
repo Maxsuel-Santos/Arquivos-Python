@@ -1,0 +1,5 @@
+print('=== PROCURANDO UMA STRING DENTRO DE OUTRA ===')
+print('-' * 30)
+nome = str(input('Qual seu nome? ')).strip()
+print('-' * 15)
+print('Seu nome tem Silva? {}'.format('silva' in nome.lower()))

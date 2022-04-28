@@ -1,0 +1,6 @@
+print('=== Salário com 15% de aumento ===')
+print('----------------------------------------------------')
+salario = float(input('QUal o salário do funcionério? '))
+salario_antigo = salario + (salario * 15 /100)
+print('O novo salário vai ser R$ {:.2f}.'.format(salario_antigo))
+print('----------------------------------------------------')

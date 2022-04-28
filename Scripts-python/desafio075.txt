@@ -1,0 +1,21 @@
+print('=== PRIMEIRA E ÚLTIMA OCORRÊNCIA DE UMA STRING ===')
+print('-' * 30)
+frase = str(input('Qual a frase/palavra? ')).strip()
+print('-' * 50)
+print('Aparece a letra "A" {} veze(s).'.format(frase.upper().count('A')))
+print('A primeira letra "A" está no índice (posição) {}.'.format(frase.upper().find('A') + 1))
+print('A última letra "A" está no índice (posição) {}.'.format(frase.rfind('A') + 1))
+print('-' * 50)
+
+print('------------------------------------------------------')
+# OUTRA MANEIRA DE RESOLUÇÃO
+print('------------------------------------------------------')
+
+print('=== PRIMEIRA E ÚLTIMA OCORRÊNCIA DE UMA STRING  ===')
+print('-' * 30)
+frase = str(input('Qual a frase/palavra? ')).upper()
+print('-' * 50)
+print('Aparece a letra "A" {} veze(s).'.format(frase.count('A')))
+print('A primeira letra "A" está no índice (posição) {}.'.format(frase.strip().find('A') + 1))
+print('A última letra "A" está no índice (posição) {}.'.format(frase.strip().rfind('A') + 1))
+print('-' * 50)

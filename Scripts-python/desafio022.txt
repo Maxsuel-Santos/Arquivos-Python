@@ -1,0 +1,25 @@
+print('=== ANALIZADOR DE TEXTOS ===')
+print('-' * 30)
+nome = str(input('Qual seu nome completo? ')).strip()
+print('-' * 30)
+print('-' * 30)
+print('    Analizando seu nome...')
+print('-' * 30)
+print('-' * 30)
+mai = nome.upper()
+print(f'Seu nome em maiúsculo fica: {mai}')
+print('-' * 30)
+min = nome.lower()
+print(f'Seu nome em minúsculo fica: {min}')
+print('-' * 30)
+# Pode ser feita dentro do format um equação, expressão, etc...
+print('Seu nome possui {} letra(s).'.format(len(nome) - nome.count(' ')))
+print('-' * 30)
+print('Seu primeiro nome tem {} letra(s).'.format(nome.find(' ')))
+# Outra forma de resolução logo abaixo. 👇👇👇👇👇👇👇
+# separa = nome.split()
+# print('Seu primeiro nome tem {} letras.'.format(separa[0], len(separa[0])))
+
+print('-' * 30)
+print('''Fim do programa.
+Encerrando...''')
