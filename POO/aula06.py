@@ -1,3 +1,5 @@
+# Mantendo estados dentro da classe
+
 class Camera:
     def __init__(self, nome, filmando = False):
         self.nome = nome
