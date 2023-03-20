@@ -15,8 +15,8 @@ class Pessoa:
 
 
 p1 = Pessoa('Maxsuel', 'Santos')
-# p1.nome = 'Luiz'
-# p1.sobrenome = 'Otávio'
+# p1.nome = 'Maxsuel'
+# p1.sobrenome = 'Santos'
 
 p2 = Pessoa('Maria', 'Joana')
 # p2.nome = 'Maria'
