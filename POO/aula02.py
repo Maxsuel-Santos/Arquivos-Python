@@ -14,7 +14,7 @@ class Pessoa:
         self.sobrenome = sobrenome
 
 
-p1 = Pessoa('Luiz', 'Otávio')
+p1 = Pessoa('Maxsuel', 'Santos')
 # p1.nome = 'Luiz'
 # p1.sobrenome = 'Otávio'
 
